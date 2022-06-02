@@ -5,27 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        video{
-            position: fixed;
-            left: 50%;
-            transform: translate(-50%);
-            bottom: 30%;
-            width: 50%;
-        }
-        span{
-            position: fixed;
-            top: 10%;
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-         <h1>친환경 의류 브랜드 소개영상</h1>
-    <video controls src="Brand new,It's you.mov">Brand new, It's you</video>
-    <span>일반적인 소비자들이 옷이 환경오염에 미치는 영향을 모를것을 예상하여 관심을 끌고 왜 해로운지 알려주고자 했습니다. 그 이후에 브랜드 네임을 보여줌으로서 환경 친화적인 이미지를 끌어내고자 했습니다.</span>
-        
-   
+    <nav>
+        <ul>
+            <li><a href="#works">Skill</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#skill">Finish</a></li> -->
+        </ul>
+    </nav>
+    <div class="wrap">
+        <section id="works">
+            <ul>
+                <li>
+                    <a href="javascript:;" class="works1">
+                        <img src="imges/PS_img_1.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="works">
+                        <img src="imges/AI_img_2.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="works2">
+                        <img src="imges/image.png" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="works3">
+                        <img src="imges/web_img_main.jpg" alt="img">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="about">
+            <span class="title">About</span>
+            <div class="detail1">
+                <div class="etc">
+                    <p>HTML,CSS,JAVA를 이용하여 홈페이지를 만들고 보완할 수 있습니다</p>
+                    <p>레이아웃을 만들고 디자인을 제작할 수 있습니다</p>
+                    <p>영상물을 기획하고 표현해낼 수 있습니다</p>
+                    
+                </div>
+                <div class="etc">
+                    <span>HTML/CSS
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level">
+                            <span role="dialog" class="level-1">88%</span>
+                        </div>
+                    </span>
+                    <span>JAVA SCRIPT
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level2">
+                            <span role="dialog" class="level-1">60%</span>
+                        </div>
+                    </span>
+                    <span>PHOTOSHOP/ILLUSTRATOR
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level3">
+                            <span role="dialog" class="level-1">85%</span>
+                        </div>
+                    </span>
+                    <span>PREMIERE/AFTEREFFECTS
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level4">
+                            <span role="dialog" class="level-1">70%</span>
+                        </div>
+                    </span>
+                    <!-- <span>
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level5">
+                            <span role="dialog" class="level-1">70%</span>
+                        </div>
+                    </span> -->
+                </div>
+            </div>
+            <!-- <span class="title2">Contact</span>  -->
+        </section>
+        <section id="skill">
+            <div class="detail2">
+                <!-- <span>PHONE &nbsp&nbsp&nbsp&nbsp&nbsp 010-5771-0454</span>
+                <span>E-MAIL &nbsp&nbsp&nbsp&nbsp&nbsp jjmngum333@gmail.com</span> -->
+            </div>
+            <div class="last">Thanks</div>
+        </section>
+    </div>
 
+    <script>
+        document.querySelector('.works1').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#1tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'');
+        });
+
+        document.querySelector('.works').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#1tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'')
+        });
+
+        document.querySelector('.works2').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#2tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'');
+        });
+
+        document.querySelector('.works3').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#3tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'');
+        });
+    </script>
 </body>
 </html>
